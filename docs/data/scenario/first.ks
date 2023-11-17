@@ -1,6 +1,6 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="走るか歩くか寝るかするメロス"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
@@ -17,6 +17,7 @@
 メロスは...[l][r]
 
 [link target=*tag_sleep] →寝る [endlink][r]
+[link target=*tag_walk] →歩く [endlink][r]
 [link target=*tag_run] →走る [endlink][r]
 [s]
 
@@ -27,6 +28,19 @@
 [bg storage=sleep.jpg time=500]
 
 メロスは死んだように深く眠った。[l][r]
+勇者は、ひどく赤面した。[r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_walk
+
+[cm]
+
+[bg storage=walk.jpg time=500]
+
+メロスは歩いた。[l][r]
 勇者は、ひどく赤面した。[r]
 
 【 BAD END 】[l][cm]
